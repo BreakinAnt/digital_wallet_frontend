@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/body.css">
+    <link rel="stylesheet" href="styles/colors.css">
 </head>
 <body>
     <div class="nav-bar">
@@ -14,41 +16,46 @@
             <p>Digital Wallet</p>
         </div>
         <div class="nav-bar__links">
-            <p class="nav-bar__section">GENERAL</p>
+            <p class="nav-bar__section color__gray">GENERAL</p>
             <div class="nav-bar__option">
                 <img class="nav-bar__option-icon" src="./icons/dashboard.png">
-                <a href="#dashboard">Dashboard</a>
+                <a class="color__gray" href="#dashboard">Dashboard</a>
             </div>
             <div class="nav-bar__option">
                 <img class="nav-bar__option-icon" src="./icons/transference.png">
-                <a href="#transfers">Transfers</a>
+                <a class="color__gray" href="#transfers">Transfers</a>
             </div>
             <div class="nav-bar__option">
                 <img class="nav-bar__option-icon" src="./icons/payment.png">
-                <a href="#payments">Payments</a>
+                <a class="color__gray" href="#payments">Payments</a>
             </div>
         </div>
         <div class="nav-bar__links">
-            <p class="nav-bar__section">PERSONAL</p>
+            <p class="nav-bar__section color__gray">PERSONAL</p>
             <div class="nav-bar__option">
                 <img class="nav-bar__option-icon" src="./icons/settings.png">
-                <a href="#settings">Settings</a>
+                <a class="color__gray" href="#settings">Settings</a>
             </div>
             <div class="nav-bar__option">
                 <img class="nav-bar__option-icon" src="./icons/bell.png">
-                <a href="#notifications">Notifications</a>
+                <a class="color__gray" href="#notifications">Notifications</a>
             </div>
         </div>
         <div class="nav-bar__bottom">
             <div class="nav-bar__option">
                 <img class="nav-bar__option-icon" src="./icons/logout.png">
-                <a href="#logout">Logout</a>
+                <a class="color__gray" href="#logout">Logout</a>
             </div>
         </div>
     </div>
     
     <div class="body">
-        Hello World
+        <div class="transactions">
+            <h3>Transactions</h3>
+            <p class="color__gray">TODAY</p>
+            <p class="color__gray">YESTERDAY</p>
+            <p class="color__gray">JULY 18</p>
+        </div>
     </div>
 <!-- <a href="https://www.flaticon.com/free-icons/money-transfer" title="money transfer icons">Money transfer icons created by Freepik - Flaticon</a> -->
 </body>

@@ -43,7 +43,6 @@
 p.nav-bar__section {
     padding: 0 0 5px 50px;
     margin: 0;
-    color: rgb(175, 175, 175);
 }
 
 .nav-bar__links {
@@ -61,7 +60,6 @@ p.nav-bar__section {
 
 .nav-bar__option a {
     text-decoration: none;
-    color: rgb(175, 175, 175);
     padding-left: 5px;
 }
 
