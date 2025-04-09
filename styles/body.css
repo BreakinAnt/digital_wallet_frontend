@@ -6,3 +6,44 @@
     padding: 50px;
     border-right: 3px solid rgb(224, 224, 224);
 }
+
+
+.transaction__icon {
+    display: flex;
+    background-color: rgb(255, 227, 204);
+    margin-right: 15px;
+}
+
+
+.transaction__icon img{
+    padding: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.transaction__card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0 5px 0;;
+}
+
+.transaction__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.transaction__info p {
+    padding: 0 0 0 0;
+    margin: 0;
+}
+
+.transaction__info p:nth-child(odd) {
+    font-size: larger;
+}
+
+.transaction__amount p {
+    text-align: right;
+}
