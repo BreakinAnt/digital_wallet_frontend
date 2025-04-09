@@ -5,3 +5,15 @@
 .color__gray {
     color: rgb(175, 175, 175);
 }
+
+.color__red {
+    color: rgb(248, 105, 105);
+}
+
+.color__green {
+    color: rgb(133, 245, 133);
+}
+
+.text__bold {
+    font-weight: bold;
+}
