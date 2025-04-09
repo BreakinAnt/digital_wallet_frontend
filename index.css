@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "LexendExa";
+    src: url("./fonts/LexendExa-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "LexendExaBold";
+    src: url("./fonts/LexendExa-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RobotoCondesed";
+    src: url("./fonts/RobotoCondensed.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: RobotoCondesed;
+    display: inline-flex;
+    background-color: rgb(248, 255, 255);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+}
+
+a:active {
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+}
+
+.nav-bar {
+    font-family: LexendExaBold;
+    border-right: 3px solid rgb(224, 224, 224);
+}
+
+.nav-bar__logo {
+    padding: 50px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav-bar__logo-text {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.nav-bar__logo-img {
+    width: 50px;
+    height: 50px;
+}
+
+p.nav-bar__section {
+    padding: 0 0 5px 50px;
+    margin: 0;
+    color: rgb(175, 175, 175);
+}
+
+.nav-bar__links {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 50px 0;
+}
+
+.nav-bar__option {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 15px 0 15px 50px;
+}
+
+.nav-bar__option a {
+    color: rgb(175, 175, 175);
+    padding-left: 5px;
+}
+
+.nav-bar__option:hover {
+    background-color: rgb(224, 224, 224);
+    color: rgb(0, 0, 0);
+}
+
+.nav-bar__option:hover a {
+    color: rgb(0, 0, 0);
+}
+
+.nav-bar__option-icon {
+    width: 20px;
+    height: 20px;
+}
