@@ -1,16 +1,16 @@
 @font-face {
     font-family: "LexendExa";
-    src: url("./fonts/LexendExa-Regular.ttf") format("truetype");
+    src: url("../fonts/LexendExa-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "LexendExaBold";
-    src: url("./fonts/LexendExa-Bold.ttf") format("truetype");
+    src: url("../fonts/LexendExa-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "RobotoCondesed";
-    src: url("./fonts/RobotoCondensed.ttf") format("truetype");
+    src: url("../fonts/RobotoCondensed.ttf") format("truetype");
 }
 
 body {
