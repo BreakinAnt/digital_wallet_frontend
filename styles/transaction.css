@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 30vw;
     height: 100%;
-    padding-top: 50px;
+    padding: 50px;
 }
 
 .transaction__icon {
@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 45px 0 45px;
+    /* padding: 0 45px 0 45px; */
     margin: 5px 0 5px 0;
 }
 
