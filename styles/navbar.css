@@ -57,13 +57,17 @@ p.nav-bar__section {
     padding: 15px 0 15px 50px;
 }
 
+.nav-bar__welcome {
+    display: block;
+}
+
 .nav-bar__option a {
     text-decoration: none;
     padding-left: 5px;
 }
 
 .hoverable:hover {
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(245, 245, 245);
     color: rgb(0, 0, 0);
 }
 
@@ -74,6 +78,21 @@ p.nav-bar__section {
 .nav-bar__option-icon {
     width: 20px;
     height: 20px;
+}
+
+.account-balance {
+    align-items: start; 
+    margin-bottom: 50px;
+    background-color: rgb(245, 245, 245);
+}
+
+.account-balance p {
+    padding: 0 0 0 0;
+    margin: 0;
+}
+
+.account-balance p:nth-child(even) {
+    font-size: larger;
 }
 
 /* .nav-bar__bottom {
