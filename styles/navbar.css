@@ -52,7 +52,6 @@ p.nav-bar__section {
 }
 
 .nav-bar__option {
-    cursor: pointer;
     display: flex;
     align-items: center;
     padding: 15px 0 15px 50px;
@@ -63,7 +62,7 @@ p.nav-bar__section {
     padding-left: 5px;
 }
 
-.nav-bar__option:hover {
+.hoverable:hover {
     background-color: rgb(224, 224, 224);
     color: rgb(0, 0, 0);
 }
@@ -77,6 +76,6 @@ p.nav-bar__section {
     height: 20px;
 }
 
-.nav-bar__bottom {
+/* .nav-bar__bottom {
     padding: 100% 0 0 0;
-}
+} */
