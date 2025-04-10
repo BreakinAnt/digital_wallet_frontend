@@ -9,144 +9,177 @@
     <link rel="stylesheet" href="styles/transaction.css">
     <link rel="stylesheet" href="styles/colors.css">
 </head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
 <body>
     <div class="app">
         <div class="nav-bar">
-            <div class="nav-bar__logo">
-                <img class="nav-bar__logo-img" src="https://cdn-icons-png.flaticon.com/512/218/218390.png" alt="Logo">
-                <p>Digital Wallet</p>
-            </div>
-            <div class="nav-bar__option nav-bar__welcome">
-                <small class="nav-bar__section color__gray">Welcome</small>
-                <p class="nav-bar__section">Felipe Carneiro</p>
-            </div>
-            <div class="nav-bar__links">
-                <p class="nav-bar__section color__gray">GENERAL</p>
-                <div class="nav-bar__option hoverable">
-                    <img class="nav-bar__option-icon" src="./icons/dashboard.png">
-                    <a class="color__gray" href="#dashboard">Dashboard</a>
+            <section>
+                <div class="nav-bar__logo">
+                    <img class="nav-bar__logo-img" src="https://cdn-icons-png.flaticon.com/512/218/218390.png" alt="Logo">
+                    <p>Digital Wallet {{count}}</p>
+
+                    <button @click="count++">Incrementar</button>
                 </div>
-                <div class="nav-bar__option hoverable">
-                    <img class="nav-bar__option-icon" src="./icons/transference.png">
-                    <a class="color__gray" href="#transfers">Transfers</a>
+
+                <div class="nav-bar__option nav-bar__welcome">
+                    <small class="nav-bar__section color__gray">Welcome</small>
+                    <p class="nav-bar__section">Felipe Carneiro</p>
                 </div>
-                <div class="nav-bar__option hoverable">
-                    <img class="nav-bar__option-icon" src="./icons/payment.png">
-                    <a class="color__gray" href="#payments">Payments</a>
+
+                <div>
+                    <div class="nav-bar__links">
+                        <p class="nav-bar__section color__gray">GENERAL</p>
+        
+                        <div class="nav-bar__option hoverable">
+                            <img class="nav-bar__option-icon" src="./icons/dashboard.png">
+                            <a class="color__gray" href="#dashboard">Dashboard</a>
+                        </div>
+        
+                        <div class="nav-bar__option hoverable">
+                            <img class="nav-bar__option-icon" src="./icons/transference.png">
+                            <a class="color__gray" href="#transfers">Transfers</a>
+                        </div>
+        
+                        <div class="nav-bar__option hoverable">
+                            <img class="nav-bar__option-icon" src="./icons/payment.png">
+                            <a class="color__gray" href="#payments">Payments</a>
+                        </div>
+                    </div>
+        
+                    <div class="nav-bar__links">
+                        <p class="nav-bar__section color__gray">PERSONAL</p>
+        
+                        <div class="nav-bar__option hoverable">
+                            <img class="nav-bar__option-icon" src="./icons/settings.png">
+                            <a class="color__gray" href="#settings">Settings</a>
+                        </div>
+        
+                        <div class="nav-bar__option hoverable">
+                            <img class="nav-bar__option-icon" src="./icons/bell.png">
+                            <a class="color__gray" href="#notifications">Notifications</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="nav-bar__links">
-                <p class="nav-bar__section color__gray">PERSONAL</p>
-                <div class="nav-bar__option hoverable">
-                    <img class="nav-bar__option-icon" src="./icons/settings.png">
-                    <a class="color__gray" href="#settings">Settings</a>
-                </div>
-                <div class="nav-bar__option hoverable">
-                    <img class="nav-bar__option-icon" src="./icons/bell.png">
-                    <a class="color__gray" href="#notifications">Notifications</a>
-                </div>
-            </div>
-            <div>
+            </section>
+
+            <section>
                 <div class="nav-bar__option account-balance">
                     <div class="">
                         <small class="color__gray">ACCOUNT BALANCE</small>
                         <p>$ 1,234.56</p>
                     </div>
                 </div>
+
                 <div class="nav-bar__option hoverable">
                     <img class="nav-bar__option-icon" src="./icons/logout.png">
                     <a class="color__gray" href="#logout">Logout</a>
                 </div>
-            </div>
+            </section>
         </div>
     
-        <div class="transactions">
-            <h3>Transactions</h3>
-            
-            <div class="transaction__date">
-                <p class="color__gray">TODAY</p>
-            </div>
-            <div class="transaction__card hoverable">
-                <div class="transaction__icon" >
-                    <img src="./icons/user.png">
+        <div>
+            <div class="transactions">
+                <h3>Transactions</h3>
+                
+                <div class="transaction__date">
+                    <p class="color__gray">TODAY</p>
                 </div>
-                <div class="transaction__info">
-                    <div class="transaction__details">
-                        <p class="text__bold">Marcelo Morais</p>
-                        <p class="color__gray">Jul 10, 6:22 PM</p>
-                    </div>
-                    <div class="transaction__amount">
-                        <p class="text__bold color__red">-$5.00</p>
-                        <p class="color__gray">Transfer</p>
-                    </div>
-                </div>
-            </div>
-            <div class="transaction__card hoverable">
-                <div class="transaction__icon" >
-                    <img src="./icons/money.png">
-                </div>
-                <div class="transaction__info">
-                    <div class="transaction__details">
-                        <p class="text__bold">Felipe Carneiro</p>
-                        <p class="color__gray">Jul 10, 6:22 PM</p>
-                    </div>
-                    <div class="transaction__amount">
-                        <p class="text__bold color__green">+$95.00</p>
-                        <p class="color__gray">Deposit</p>
-                    </div>
-                </div>
-            </div>
     
-            <div class="transaction__date">
-                <p class="color__gray">YESTERDAY</p>
-            </div>
-            <div class="transaction__card hoverable">
-                <div class="transaction__icon" >
-                    <img src="./icons/withdraw.png">
-                </div>
-                <div class="transaction__info">
-                    <div class="transaction__details">
-                        <p class="text__bold">Felipe Carneiro</p>
-                        <p class="color__gray">Jul 10, 6:22 PM</p>
+                <div class="transaction__card hoverable">
+                    <div class="transaction__icon" >
+                        <img src="./icons/user.png">
                     </div>
-                    <div class="transaction__amount">
-                        <p class="text__bold color__red">-$90.30</p>
-                        <p class="color__gray">Withdraw</p>
-                    </div>
-                </div>
-            </div>
     
-            <div class="transaction__date">
-                <p class="color__gray">JULY 18</p>
-            </div>
-            <div class="transaction__card hoverable">
-                <div class="transaction__icon" >
-                    <img src="./icons/grocery.png">
-                </div>
-                <div class="transaction__info">
-                    <div class="transaction__details">
-                        <p class="text__bold">Super Market</p>
-                        <p class="color__gray">Jul 10, 6:22 PM</p>
-                    </div>
-                    <div class="transaction__amount">
-                        <p class="text__bold color__red">-$126.89</p>
-                        <p class="color__gray">Grocery</p>
+                    <div class="transaction__info">
+                        <div class="transaction__details">
+                            <p class="text__bold">Marcelo Morais</p>
+                            <p class="color__gray">Jul 10, 6:22 PM</p>
+                        </div>
+    
+                        <div class="transaction__amount">
+                            <p class="text__bold color__red">-$5.00</p>
+                            <p class="color__gray">Transfer</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="transaction__card hoverable">
-                <div class="transaction__icon" >
-                    <img src="./icons/misc.png">
-                </div>
-                <div class="transaction__info">
-                    <div class="transaction__details">
-                        <p class="text__bold">Joy-Boy Store</p>
-                        <p class="color__gray">Jul 10, 6:22 PM</p>
+    
+                <div class="transaction__card hoverable">
+                    <div class="transaction__icon" >
+                        <img src="./icons/money.png">
                     </div>
-                    <div class="transaction__amount">
-                        <p class="text__bold color__red">-$23.99</p>
-                        <p class="color__gray">Miscellaneous</p>
+    
+                    <div class="transaction__info">
+                        <div class="transaction__details">
+                            <p class="text__bold">Felipe Carneiro</p>
+                            <p class="color__gray">Jul 10, 6:22 PM</p>
+                        </div>
+    
+                        <div class="transaction__amount">
+                            <p class="text__bold color__green">+$95.00</p>
+                            <p class="color__gray">Deposit</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="transaction__date">
+                    <p class="color__gray">YESTERDAY</p>
+                </div>
+    
+                <div class="transaction__card hoverable">
+                    <div class="transaction__icon" >
+                        <img src="./icons/withdraw.png">
+                    </div>
+    
+                    <div class="transaction__info">
+                        <div class="transaction__details">
+                            <p class="text__bold">Felipe Carneiro</p>
+                            <p class="color__gray">Jul 10, 6:22 PM</p>
+                        </div>
+    
+                        <div class="transaction__amount">
+                            <p class="text__bold color__red">-$90.30</p>
+                            <p class="color__gray">Withdraw</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="transaction__date">
+                    <p class="color__gray">JULY 18</p>
+                </div>
+    
+                <div class="transaction__card hoverable">
+                    <div class="transaction__icon" >
+                        <img src="./icons/grocery.png">
+                    </div>
+    
+                    <div class="transaction__info">
+                        <div class="transaction__details">
+                            <p class="text__bold">Super Market</p>
+                            <p class="color__gray">Jul 10, 6:22 PM</p>
+                        </div>
+    
+                        <div class="transaction__amount">
+                            <p class="text__bold color__red">-$126.89</p>
+                            <p class="color__gray">Grocery</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="transaction__card hoverable">
+                    <div class="transaction__icon" >
+                        <img src="./icons/misc.png">
+                    </div>
+    
+                    <div class="transaction__info">
+                        <div class="transaction__details">
+                            <p class="text__bold">Joy-Boy Store</p>
+                            <p class="color__gray">Jul 10, 6:22 PM</p>
+                        </div>
+    
+                        <div class="transaction__amount">
+                            <p class="text__bold color__red">-$23.99</p>
+                            <p class="color__gray">Miscellaneous</p>
+                        </div>
                     </div>
                 </div>
             </div>
