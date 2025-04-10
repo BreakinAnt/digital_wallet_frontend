@@ -1,12 +1,11 @@
 .transactions {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 30vw;
     height: 100%;
     padding: 50px;
-    border-right: 3px solid rgb(224, 224, 224);
+ 
 }
-
 
 .transaction__icon {
     display: flex;

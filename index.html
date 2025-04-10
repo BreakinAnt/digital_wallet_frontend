@@ -9,50 +9,51 @@
     <link rel="stylesheet" href="styles/body.css">
     <link rel="stylesheet" href="styles/colors.css">
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 <body>
-    <div class="nav-bar">
-        <div class="nav-bar__logo">
-            <img class="nav-bar__logo-img" src="https://cdn-icons-png.flaticon.com/512/218/218390.png" alt="Logo">
-            <p>Digital Wallet</p>
+    <div class="app">
+        <div class="nav-bar">
+            <div class="nav-bar__logo">
+                <img class="nav-bar__logo-img" src="https://cdn-icons-png.flaticon.com/512/218/218390.png" alt="Logo">
+                <p>Digital Wallet</p>
+            </div>
+            <div class="nav-bar__links">
+                <p class="nav-bar__section color__gray">GENERAL</p>
+                <div class="nav-bar__option">
+                    <img class="nav-bar__option-icon" src="./icons/dashboard.png">
+                    <a class="color__gray" href="#dashboard">Dashboard</a>
+                </div>
+                <div class="nav-bar__option">
+                    <img class="nav-bar__option-icon" src="./icons/transference.png">
+                    <a class="color__gray" href="#transfers">Transfers</a>
+                </div>
+                <div class="nav-bar__option">
+                    <img class="nav-bar__option-icon" src="./icons/payment.png">
+                    <a class="color__gray" href="#payments">Payments</a>
+                </div>
+            </div>
+            <div class="nav-bar__links">
+                <p class="nav-bar__section color__gray">PERSONAL</p>
+                <div class="nav-bar__option">
+                    <img class="nav-bar__option-icon" src="./icons/settings.png">
+                    <a class="color__gray" href="#settings">Settings</a>
+                </div>
+                <div class="nav-bar__option">
+                    <img class="nav-bar__option-icon" src="./icons/bell.png">
+                    <a class="color__gray" href="#notifications">Notifications</a>
+                </div>
+            </div>
+            <div class="nav-bar__bottom">
+                <div class="nav-bar__option">
+                    <img class="nav-bar__option-icon" src="./icons/logout.png">
+                    <a class="color__gray" href="#logout">Logout</a>
+                </div>
+            </div>
         </div>
-        <div class="nav-bar__links">
-            <p class="nav-bar__section color__gray">GENERAL</p>
-            <div class="nav-bar__option">
-                <img class="nav-bar__option-icon" src="./icons/dashboard.png">
-                <a class="color__gray" href="#dashboard">Dashboard</a>
-            </div>
-            <div class="nav-bar__option">
-                <img class="nav-bar__option-icon" src="./icons/transference.png">
-                <a class="color__gray" href="#transfers">Transfers</a>
-            </div>
-            <div class="nav-bar__option">
-                <img class="nav-bar__option-icon" src="./icons/payment.png">
-                <a class="color__gray" href="#payments">Payments</a>
-            </div>
-        </div>
-        <div class="nav-bar__links">
-            <p class="nav-bar__section color__gray">PERSONAL</p>
-            <div class="nav-bar__option">
-                <img class="nav-bar__option-icon" src="./icons/settings.png">
-                <a class="color__gray" href="#settings">Settings</a>
-            </div>
-            <div class="nav-bar__option">
-                <img class="nav-bar__option-icon" src="./icons/bell.png">
-                <a class="color__gray" href="#notifications">Notifications</a>
-            </div>
-        </div>
-        <div class="nav-bar__bottom">
-            <div class="nav-bar__option">
-                <img class="nav-bar__option-icon" src="./icons/logout.png">
-                <a class="color__gray" href="#logout">Logout</a>
-            </div>
-        </div>
-    </div>
     
-    <div class="body">
         <div class="transactions">
             <h3>Transactions</h3>
-
+    
             <div class="transaction__date">
                 <p class="color__gray">TODAY</p>
             </div>
@@ -86,7 +87,7 @@
                     </div>
                 </div>
             </div>
-
+    
             <div class="transaction__date">
                 <p class="color__gray">YESTERDAY</p>
             </div>
@@ -105,7 +106,7 @@
                     </div>
                 </div>
             </div>
-
+    
             <div class="transaction__date">
                 <p class="color__gray">JULY 18</p>
             </div>
@@ -141,6 +142,5 @@
             </div>
         </div>
     </div>
-<!-- <a href="https://www.flaticon.com/free-icons/money-transfer" title="money transfer icons">Money transfer icons created by Freepik - Flaticon</a> -->
 </body>
 </html>
